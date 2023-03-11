@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    font-size: 15px;
+}
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(211, 20%, 21%);
+    --Slightly_Dark_Blue: hsla(213, 19%, 18%,.6);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+    --fw-400:400;
+    --fw-700:700;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_Dark_Blue);
+    font-weight: var(--fw-400);
+}
+.section{
+    width:95%;
+    max-width:350px;
+    background-color:var(--Slightly_Dark_Blue);
+    padding:1.5em;
+    border-radius: 1em;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1em;
+}
+button{
+    cursor:pointer;
+}
+.ratingStarImage,
+.button{
+    border-radius: 50%;
+    background-color: var(--Dark_Blue);
+}
+.button{
+    width:2.5rem;
+    height:2.5rem;
+    border: none;
+    color:var(--Light_Grey);
+}
+.button:focus{
+    background-color: var(--Medium_Grey);
+    color:var(--White);
+}
+.button:hover{
+    background-color: var(--Orange);
+    color:var(--White);
+}
+.ratingStarImage{
+    padding:1em;
+    margin-bottom: 1.5em;
+}
+.ratingSectionTitle,
+.thankYouTitle{
+    color:var(--White);
+    font-weight: var(--fw-700);
+}
+.ratingSectionPara,
+.thankYouPara{
+    color:var(--Light_Grey);
+    margin:1em 0 1.3em;
+    line-height: 1.5;
+}
+#Submit{
+    background-color: var(--Orange);
+    width:100%;
+    padding:.7em;
+    border-radius: 1.5em;
+    border:none;
+    color:var(--White);
+    margin-top: 3em;
+    font-weight: var(--fw-700);
+}
+#Submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+#thankUSection{
+    display: none;
+    text-align: center;
+}
+.thankYouImage{
+    margin-top: 1em;
+}
+.msg{
+    width:fit-content;
+    background-color: var(--Dark_Blue);
+    padding: .5em .7em;
+    color:var(--Orange);
+    border-radius: 1em;
+    margin:1em auto;
+}
